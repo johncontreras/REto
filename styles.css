@@ -1,0 +1,69 @@
+/* Normalizacion */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.caja-madre{
+
+    background: lightgreen;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.whatsapp{
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    background: lightgray; 
+    width: 100%;
+    height: 100%;
+    }
+    .contactos{
+        grid-column:1 / 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        overflow: auto;
+    }        
+        .persona{
+            display: flex;
+            justify-content: space-between;
+            height: 100px;
+            width: 350px;
+            border-bottom: solid 1px lightslategray;
+        }
+
+        .foto>img{
+            width: 100px;
+            border-radius: 100%;
+        }
+        .nombre{
+            padding-left: 10px;;            
+        }
+        .nombre>span{
+            font-weight: bolder;            
+        }
+    .mensajes{
+        grid-column:2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 120px 1fr 120px;
+        background: lightgoldenrodyellow;
+        width: 100%;
+        height: 100%;
+    }
+        .encabezado{
+            grid-column:1/1;
+            grid-row: 1/2;
+            background: lightgrey;
+        }
+        .caja-texto{
+            grid-column:1/1;
+            grid-row: 3/4;
+            background: lightgrey;
+        }
